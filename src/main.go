@@ -23,7 +23,8 @@ func main() {
 		r.POST("/ping/", func(ctx *gin.Context) {
 			ctx.JSON(200, gin.H{
 						"message": "pong",
-						// "yak-kin": "pad-tai",
+						"yak-kin": "pad-tai",
+						"mai-yak-kin": "pad-ka-pao",
 					})
 		})
 	}

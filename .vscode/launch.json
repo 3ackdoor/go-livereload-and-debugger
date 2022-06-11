@@ -13,7 +13,7 @@
       "console": "internalConsole",
       "showLog": true,
       "apiVersion": 2,
-      "trace": "verbose"
+      "trace": "verbose",
     },
     {
       "name": "Launch file",

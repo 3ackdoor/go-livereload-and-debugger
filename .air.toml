@@ -1,8 +1,8 @@
 # Config file for [Air](https://github.com/cosmtrek/air) in TOML format
 
 # Working directory
-root = "../"
-tmp_dir = "tmp"
+root = "."
+tmp_dir = "../tmp"
 
 [build]
   # Just plain old shell command. You could use `make` as well.

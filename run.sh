@@ -6,9 +6,12 @@
 readonly START="start"
 
 CMD="$1"
+AIR_PORT="2345"
+APP_PORT="8080"
 
 terminate_running(){
-  lsof -ti:2345,8080 | xargs kill -9
+  lsof -i:$AIR_PORT,$APP_PORT, | grep LISTEN | awk -F " " ' { print $2 } ' | xargs kill -9
+  # lsof -ti:$AIR_PORT,$APP_PORT | xargs kill -9
 }
 
 if [ $CMD == $START ]; then
