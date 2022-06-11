@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Connect to server",
+      "name": "Attach to remote process",
       "type": "go",
       "request": "attach",
       "mode": "remote",
@@ -14,6 +14,7 @@
       "showLog": true,
       "apiVersion": 2,
       "trace": "verbose",
+      // "postDebugTask": ""
     },
     {
       "name": "Launch file",
